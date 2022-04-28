@@ -6,8 +6,8 @@
     <title>聖誕樹</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script>
         window.console = window.console || function (t) {};
     </script>
@@ -19,13 +19,13 @@
 </head>
 
 <body translate="no">
-    <script src="js/three.min.js"></script>
-    <script src="js/EffectComposer.js"></script>
-    <script src="js/RenderPass.js"></script>
-    <script src="js/ShaderPass.js"></script>
-    <script src="js/CopyShader.js"></script>
-    <script src="js/LuminosityHighPassShader.js"></script>
-    <script src="js/UnrealBloomPass.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/EffectComposer.js"></script>
+    <script src="./js/RenderPass.js"></script>
+    <script src="./js/ShaderPass.js"></script>
+    <script src="./js/CopyShader.js"></script>
+    <script src="./js/LuminosityHighPassShader.js"></script>
+    <script src="./js/UnrealBloomPass.js"></script>
 
     <div id="overlay">
         <button class="btn" type="button">Merry Christmas</button>
@@ -527,7 +527,7 @@
                 uniforms: {
                     ...uniforms,
                     pointTexture: {
-                        value: new THREE.TextureLoader().load(`images/spark1.png`)
+                        value: new THREE.TextureLoader().load(`./images/spark1.png`)
                     }
                 },
 
@@ -694,9 +694,9 @@
                 scene.add(mesh);
             }
             const sprites = [
-                "images/snowflake1.png",
-                "images/snowflake2.png",
-                "images/snowflake3.png",
+                "./images/snowflake1.png",
+                "./images/snowflake2.png",
+                "./images/snowflake3.png",
             ];
 
             sprites.forEach(sprite => {
@@ -729,7 +729,7 @@
                 uniforms: {
                     ...uniforms,
                     pointTexture: {
-                        value: new THREE.TextureLoader().load(`images/spark1.png`)
+                        value: new THREE.TextureLoader().load(`/images/spark1.png`)
                     }
                 },
 
